@@ -1,0 +1,32 @@
+{
+  "name": "conclave-bot",
+  "version": "0.1.0",
+  "description": "A sample Discord bot that pulls gifs.",
+  "main": "conclave.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpl154/conclave-bot"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "js",
+    "conclave",
+    "imgur",
+    "giphy"
+  ],
+  "author": "Joseph LaCava",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpl154/conclave-bot/issues"
+  },
+  "homepage": "https://github.com/jpl154/conclave-bot#readme",
+  "dependencies": {
+    "discord-bot-base": "6.0.2",
+    "imgur-search": "1.0.1",
+    "giphy-api": "1.2.6"
+  }
+}

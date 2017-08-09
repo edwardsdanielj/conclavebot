@@ -1,0 +1,5 @@
+{
+  "botToken": "APP_BOT_USER_TOKEN",
+  "commandTrigger": "!",
+  "demoMode": true,
+}
