@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/jpl154/conclavebot.svg?branch=development)](https://travis-ci.org/jpl154/conclavebot)
+[![Build Status](https://travis-ci.org/jpl154/conclavebot.svg?branch=develop)](https://travis-ci.org/jpl154/conclavebot)
 
 # conclave-bot
 A simple Discord bot
