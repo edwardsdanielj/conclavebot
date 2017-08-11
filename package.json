@@ -27,7 +27,7 @@
   "dependencies": {
     "discord-bot-base": "6.0.2",
     "imgur-search": "1.0.1",
-    "giphy-api": "1.2.6"
+    "giphy-api": "1.2.6",
     "env-var"
   }
 }
