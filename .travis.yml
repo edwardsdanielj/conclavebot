@@ -1,9 +1,18 @@
 language: node_js
 node_js:
     - "6.11.2"
+sudo: required
 
+addons:
+  sonarcloud:
+    organization: "jpl154-github"
+    token:
+      secure: $SONAR_TOKEN
+jdk:
+  - oraclejdk8
 cache:
   directories:
+    - '$HOME/.sonar/cache'
     - node_modules
 
 deploy:
@@ -30,6 +39,7 @@ deploy:
 
 
 script:
+  - sonar-scanner
   - zip -r latest *
   - mkdir -p dpl_cd_upload
   - mv latest.zip dpl_cd_upload/latest.zip
