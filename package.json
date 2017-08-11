@@ -1,6 +1,6 @@
 {
   "name": "conclave-bot",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "A sample Discord bot that pulls gifs.",
   "main": "conclave.js",
   "scripts": {
@@ -28,5 +28,6 @@
     "discord-bot-base": "6.0.2",
     "imgur-search": "1.0.1",
     "giphy-api": "1.2.6"
+    "env-var"
   }
 }

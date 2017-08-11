@@ -10,10 +10,10 @@ deploy:
   secret_access_key: $AWS_SECRET_KEY
   local_dir: dpl_cd_upload
   skip_cleanup: true
-  on: &2
-    repo: organization/reponameHERE
-  bucket: yourBucketNameHERE
-  region: bucketRegionHERE
+  on:
+    branch: release
+  bucket: $AWS_BUCKET_NAME
+  region: $AWS_BUCKET_REGION
 - provider: codedeploy
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
@@ -23,8 +23,10 @@ deploy:
   application: NameOfTheCodeDeployApplicationNameHERE
   deployment_group: CodeDeployDeploymentGroupNameHERE
   region: serverRegionHERE
-  on: *2
-  
+  on:
+    branch: release
+
+
 script:
   - zip -r latest *
   - mkdir -p dpl_cd_upload
